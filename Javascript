@@ -1,0 +1,4 @@
+1. Data Type
+there are 5 Simple data types in ECMAScript: Undefined, Null, Boolean, Number, String.
+And one Complicated data type: Object.
+
