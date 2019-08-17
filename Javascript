@@ -2,3 +2,7 @@
 there are 5 Simple data types in ECMAScript: Undefined, Null, Boolean, Number, String.
 And one Complicated data type: Object.
 
+empty string & boolean
+"" == false : true
+"" === false: false
+===: not only compare value, but data type.
