@@ -1,4 +1,4 @@
-1. Data Type
+1. 数据类型
 there are 5 Simple data types in ECMAScript: Undefined, Null, Boolean, Number, String.
 And one Complicated data type: Object.
 
@@ -6,3 +6,8 @@ empty string & boolean
 "" == false : true
 "" === false: false
 ===: not only compare value, but data type.
+
+
+2. 函数声明和函数表达式
+解析器在向执行环境加载数据时，对函数声明和函数表达式并非一视同仁。
+解析器会先读取函数声明，并使其在执行任何代码之前可以访问。但函数表达式则必须等到解析器执行到它所在的代码行，才会被真正解释执行。
