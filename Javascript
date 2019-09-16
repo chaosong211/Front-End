@@ -19,3 +19,17 @@ function fb(){
 }
 如果在函数内部初始化num变量时没有加var关键字，那么，当调用完fb函数后，已经被添加到全局环境的变量num将继续存在，即仍然可以访问到该变量。
 tips: 在初始化变量前一定要先声明，避免出现以上的问题。
+
+4. 内存管理
+只保留执行代码中的有用变量，一旦数据不再有用，最好手动将其置为null来释放其引用（解除引用：dereferencing）。
+function createPerson(name){
+  var localPerson = new Object();
+  localPerson.name = name;
+  return localPerson;
+}
+var globalPerson = createPerson("Jacky");
+// other coding here.....
+// dereferencing manually
+globalPerson = null;
+
+这一做法适用于大多数全局变量和全局变量的属性。
